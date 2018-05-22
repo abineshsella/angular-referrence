@@ -1,0 +1,10 @@
+<div>
+<div class="animated bounceInLeft pymtdiv">
+	<!-- <div class="col-1-4" *ngFor="let pt of pymtList"> -->
+	<div  class="col-1-4" *ngFor="let pt of pymtList">
+		<a routerLink="/paymentPage/{{pt.pymtId}}">
+			<img class="pymtImg" [src]="pt.pymtImg" />
+		</a>
+	</div>
+</div>
+</div>

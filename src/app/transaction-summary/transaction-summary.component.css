@@ -1,0 +1,158 @@
+.summaryDiv{
+margin-top: 1%;
+float: left;
+font-family: Gill Sans, sans-serif;
+margin-left: 33%;
+ /* background-color: rgba(206, 58, 28, 0.212); */
+/*height: 200px; */
+/* border:1px solid white; */
+/* box-shadow: inset 0.3em 0.3em 0.9em white;
+box-shadow: 5px 5px 25px white; */
+background: rgba(179,220,237,1);
+background: -moz-linear-gradient(left, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(179,220,237,1)), color-stop(50%, rgba(41,184,229,1)), color-stop(100%, rgba(188,224,238,1)));
+background: -webkit-linear-gradient(left, rgba(179,220,237,1) 0%, rgba(179,220,237,1) 50%, rgba(188,224,238,1) 100%);
+background: -o-linear-gradient(left, rgba(179,220,237,1) 0%, rgba(179,220,237,1) 50%, rgba(188,224,238,1) 100%);
+background: -ms-linear-gradient(left, rgba(179,220,237,1) 0%, rgba(179,220,237,1)50%, rgba(188,224,238,1) 100%);
+background: linear-gradient(to right, rgba(179,220,237,1) 0%, rgba(179,220,237,1) 50%, rgba(188,224,238,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 );
+border-radius: 10px;
+width: 40%;
+height: 225px;
+}
+.btnDiv{
+    margin-top: 22%;
+    padding-left: 275px;
+    margin-left: 25%;
+    /* margin-left: 10%; */
+}
+.fnt{
+  font-size: 20px;
+  color:#324DA1;
+  width: 150px;
+}
+.disclaimer{
+  color:black;
+  background-color: #669999;
+  /* border:1px solid turquoise; */
+  border-radius: 10px;
+  
+  width: 40%;
+  align-items: center;
+  margin-left: 33%;
+  height: 35px;
+  position: absolute;
+  margin-top: 20%;
+}
+  /* DivTable.com */
+  .divTable{
+	  display: table;
+    width: 100%;
+    margin-top: 8%;
+    margin-left: 8%;
+    /* margin-left: 45%; */
+    /* width: 270px; */
+}
+.divTableRow {
+  display: table-row;
+  border:1px solid black;
+  border-bottom:1px solid black;
+  /* width: auto; */
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	/*border: 1px solid #999999;*/
+	display: table-cell;
+    padding: 4px 10px;
+    text-align: right;
+    }
+
+ .divTableCell1, .divTableHead1 {
+      display: table-cell;
+        padding: 5px 15px;
+        text-align: left;
+    }
+
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+
+.divTableBody {
+	display: table-row-group;
+}
+
+/*Button*/
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  /* #btnBack #spn {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  } */
+
+  #btnBack #spn:after {
+    content: '\00AB';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -90px;
+    transition: 0.5s;
+  }
+  #btnBack:hover #spn {
+    padding-left: -15px;
+  }
+  
+  #btnBack:hover #spn:after {
+    opacity: 1;
+    right: 0;
+    left:1;
+  }
+
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+ 
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

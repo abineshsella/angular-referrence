@@ -1,0 +1,14 @@
+<div class="divHeader">
+  <div class="headerImg">
+    <img src="../assets/LOGO_BSE_PAGAM.png">
+  </div>
+  <div >
+    <img class="merchnatImg" src="../assets/triboo2.png">
+  </div>
+</div>
+<div class="speed-dial">
+<fab-speed-dial direction="down">
+    <button type="button" class="lnbutton" mat-fab fab-toggle>{{ translate.currentLang }}</button>
+    <button type="button" style="color:darkgoldenrod" mat-fab fab-button *ngFor="let lang of translate.getLangs()" (click)="translate.use(lang)">{{ lang }}</button>
+  </fab-speed-dial>
+</div>

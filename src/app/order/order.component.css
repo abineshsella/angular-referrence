@@ -1,0 +1,63 @@
+.orderDiv{
+height: 10%;
+width: 22%;
+/*background-color: #2E3732; */
+margin-left: 35%;
+color:black;
+font-style: bold;
+}
+.orderAmnt{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -10px;
+    position: relative;
+    padding-right:25px;
+}
+
+.dividerDiv{
+    /* display: block;
+    height: 0%;
+    border: 0;
+    border-right: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; */
+    border-left: 2px solid rgba(179,220,237,1);;
+    height: 50px;
+    position: absolute;
+    margin-left: 16%;
+    margin-top: -3.5%;
+}
+  /* DivTable.com */
+  .divTable{
+    margin-top: 20px;
+	display: table;
+    width: 20%;
+    margin-top: -20%;
+    margin-left: 75%;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+  /* color:#669999; */
+  font-family: Gill Sans, sans-serif;
+  /* color:#C83315; */
+  color:#324DA1;
+}
+.divTableCell, .divTableHead {
+	/*border: 1px solid #999999;*/
+	display: table-cell;
+    padding: 3px 10px;
+    text-align: left;
+    font-family: Gill Sans, sans-serif;
+}
+
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}

@@ -1,0 +1,30 @@
+
+{
+  "HOME": {
+    "TITLE": "Hello Angular 2 with ng2-translate!",
+    "SELECT": "Change language"
+  },
+  "ORDER" : {
+    "AMOUNT":"Amount",
+    "MERCHANTNAME":"MerchantName",
+    "TRANSACTIONID":"TransactionID",
+    "ORDERID":"OrderID"
+  },
+  "CARD":{
+    "NAME":"Name",
+    "CARDNUM":"Card Number",
+    "EXPIRYDATE":"Expiry Date",
+    "CVV":"CVV",
+    "EMAIL":"E-Mail"
+  },
+  "BUTTONS":{
+    "SUBMIT":"Submit",
+    "BACK":"Back"
+  },
+  "SUMMARY":{
+    "NAME":"Name",
+    "ORDERNUM":"Order Number",
+    "AMOUNT":"Amount",
+    "EMAIL":"E-Mail"
+  }
+}

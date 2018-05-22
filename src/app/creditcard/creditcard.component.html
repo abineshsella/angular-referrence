@@ -1,0 +1,48 @@
+<!-- <div class="card-wrapper"></div>
+<form card container=".card-wrapper" action="javascript:void(0);">
+	<mat-form-field>
+		<input matInput [(ngModel)]="card.name" placeholder="Name" card-name [ngModelOptions]="{standalone: true}">
+	</mat-form-field>
+	<mat-form-field>
+		<input matInput [(ngModel)]="card.cardNumber" placeholder="Card Number" card-number [ngModelOptions]="{standalone: true}">
+	</mat-form-field>
+	<mat-form-field>
+		<input matInput [(ngModel)]="card.expiryDate" placeholder="Expiry Date" card-expiry [ngModelOptions]="{standalone: true}">
+	</mat-form-field>
+	<mat-form-field>
+		<input matInput [(ngModel)]="card.cvv" placeholder="CVV" card-cvc [ngModelOptions]="{standalone: true}">
+	</mat-form-field>
+	<mat-form-field>
+		<input matInput [(ngModel)]="card.email" placeholder="Email" [ngModelOptions]="{standalone: true}">
+	</mat-form-field>
+	<button (click)="onSubmit()" routerLink="/summary">Submit</button>
+	<button (click)="goBack()">Back</button>
+</form> -->
+<div class="cardMain">
+	<div class="card-wrapper  animated bounceInLeft"></div>
+	<div class="cardText  animated bounceInRight">
+		<form card container=".card-wrapper" action="javascript:void(0);">
+			<div class="{{validateClass}}">
+			<mat-form-field>
+				<input required matInput [(ngModel)]="card.name"  placeholder="{{ 'CARD.NAME' | translate }}" card-name [ngModelOptions]="{standalone: true}">
+			</mat-form-field> <br/>			
+			<mat-form-field>
+				<input required matInput [(ngModel)]="card.cardNumber"  placeholder="{{ 'CARD.CARDNUM' | translate }}" card-number [ngModelOptions]="{standalone: true}">
+			</mat-form-field><br/>
+			<mat-form-field>
+				<input required matInput [(ngModel)]="card.expiryDate" placeholder="{{ 'CARD.EXPIRYDATE' | translate }}" card-expiry [ngModelOptions]="{standalone: true}">
+			</mat-form-field><br/>
+			<mat-form-field>
+				<input required matInput [(ngModel)]="card.cvv"  placeholder="{{ 'CARD.CVV' | translate }}" card-cvc [ngModelOptions]="{standalone: true}">
+			</mat-form-field><br/>
+			<mat-form-field>
+				<input required matInput [(ngModel)]="card.email"  placeholder="{{ 'CARD.EMAIL' | translate }}" [ngModelOptions]="{standalone: true}">
+			</mat-form-field><br/>		
+			</div>
+			<div>
+			<button id="btnBack" class="button" (click)="goBack()"><span id="spn">{{ 'BUTTONS.BACK' | translate }}</span></button>
+	        <button class="button" (click)="justValidate()" routerLink ="{{routing}}"><span >{{ 'BUTTONS.SUBMIT' | translate }}</span></button>		
+			</div>		
+		</form>	
+	</div>
+</div>

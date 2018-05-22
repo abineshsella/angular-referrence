@@ -1,0 +1,31 @@
+
+<div class="summaryDiv">
+    <div class="divTable ">
+        <div class="divTableBody">
+            <div class="divTableRow">
+                <div class="divTableCell animated bounceInLeft fnt">{{ 'SUMMARY.NAME' | translate }}</div>
+                <div class="divTableCell1 animated bounceInRight">{{summaryCard.name}}</div>
+            </div>
+            <div class="divTableRow">
+                <div class="divTableCell animated bounceInLeft fnt">{{ 'CARD.CARDNUM' | translate }}</div>
+                <div class="divTableCell1 animated bounceInRight">{{summaryCard.cardNumber}}</div>
+            </div>
+            <div class="divTableRow">
+                <div class="divTableCell animated bounceInLeft fnt">{{ 'CARD.EXPIRYDATE' | translate }}</div>
+                <div class="divTableCell1 animated bounceInRight">{{summaryCard.expiryDate}}</div>
+            </div>
+            <div class="divTableRow">
+                <div class="divTableCell animated bounceInLeft fnt">{{ 'CARD.CVV' | translate }}</div>
+                <div class="divTableCell1 animated bounceInRight">{{summaryCard.CVV}}</div>
+            </div>
+            <div class="divTableRow">
+                <div class="divTableCell animated bounceInLeft fnt">{{ 'SUMMARY.EMAIL' | translate }}</div>
+                <div class="divTableCell1 animated bounceInRight">{{summaryCard.email}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="btnDiv">
+    <button id="btnBack" class="button" (click)="goBack()"><span id="spn">{{ 'BUTTONS.BACK' | translate }}</span></button>
+    <button class="button" (click)="doTransaction()" routerLink="/receipt"><span>{{ 'BUTTONS.SUBMIT' | translate }}</span></button>
+</div>
